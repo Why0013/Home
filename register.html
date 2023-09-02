@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/account.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Register Account</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <nav>
+                <div class="logo">
+                    <a href="index.html"><img src="img/20230307_214720.png" width="150px" alt="logo"></a>
+                </div>
+    
+                <ul id="MenuItems">
+                    <li><u><a class="active"  href="index.html">Home</a></u></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contacts.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+                <img class="menu" src="img/menu-removebg-preview.png" 
+                onclick="menutoggle()" alt="">
+            </nav>
+            <div style="float: right; cursor: pointer;">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="form-box">
+        <div class="login">
+            <form action="">
+                <h2>Register Account</h2>
+                    <div class="inputbox">
+                        <input type="text" required>
+                        <label for="">Username</label>
+                    </div>
+                    <div class="inputbox">
+                        <input type="emai" required>
+                        <label for="">email</label>
+                    </div>
+                    <div class="inputbox">
+                        <input type="password" required>
+                        <label for="">password</label>
+                    </div>
+                    <div class="button">
+                    <button>Sign up</button>
+                    <div class="already-2">
+                        <p>Sudah punya akun?<a class="click-2" href="account.html">login sekarang!</a></p>
+                    </div>
+                    </div>
+            </form>
+        </div>                    
+    </div>
+
+
+    <!--footer-->
+    <!-- <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-co-1">
+                    <h3>Follow Us</h3>
+                    <br>
+                    <div class="app-sosmed">
+                        <a href=""><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
+                    </div>
+                </div>
+                <div class="footer-co-2">
+                    <h3>Download Our App</h3>
+                    <br>
+                    <p>Download app for android ios mobile phone</p>
+                    <div class="app-logo">
+                        <img src="https://www.draiv.id/assets/images/download_playstore.png" alt="img">
+                        <img src="https://www.seekpng.com/png/detail/264-2640442_apple-logo-android-ios-download-icon.png" alt="img">
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright"><a href=""></a>Risset Coppyright 2023 - ZydanStore.com</p>
+        </div>
+    </div> -->
+
+
+<!-- <script>
+    const input = document.querySelector('.click')
+    const input2 = document.querySelector('.click-2')
+    const register = document.querySelector('.register')
+    const login = document.querySelector('.login')
+
+    
+
+
+    input.addEventListener('click', (e)=>{
+        e.preventDefault()
+        register.classList.toggle('show')
+        login.classList.toggle('showl')
+    })
+
+    input2.addEventListener('click', (e)=>{
+        e.preventDefault()
+        register.classList.toggle('show')
+        login.classList.toggle('showl')
+    })
+
+</script> -->
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px"
+            }
+        else
+            {
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+
+</body>
+</html>

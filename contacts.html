@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contacts us</title>
+</head>
+<body>
+ <div class="container2">
+        <div class="navbar">
+            <nav>
+                <div class="logo">
+                    <a href="index.html"><img src="img/20230307_214720.png" width="140px" alt="logo"></a>
+                </div>
+                <ul id="MenuItems">
+                    <li><u><a class="active"  href="index.html">Home</a></u></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contacts.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+                <img class="cart" src="img/cart-removebg-preview.png" width="35px" height="35px" alt="">
+                <img class="menu" src="img/menu-removebg-preview.png" 
+                onclick="menutoggle()" alt="">
+            </nav>
+            <div style="float: right; cursor: pointer;">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="card-container">
+            <div class="left">
+                <div class="left-container">
+                    <h2 class="title">Consultation</h2>
+                    <h4>Corporate Office</h4>
+                    <p>Jl. Gatotsubroto ,Taman Merdeka medan, Medan.</p>
+                    <br>
+                    <h4>Customer Support</h4>
+                    <p>Senin-Jumat 07:00 am - 18:00 pm <br>
+                        Sabtu 08:00 am - 17:00 pm <br>
+                        Minggu Tutup 
+                    </p>
+                    <br>
+                    <h4>Contact Us</h4>
+                    <p>cvzydanstore@gmail.com</p>
+                </div>
+            </div>
+            <div class="right">
+                <form action="">
+                    <h2 class="1g-view">Send A Message !</h2>
+                    <h2 class="sm-view">Send A Message !</h2>
+                    <input type="text" placeholder="CV ZYDANSTORE">
+                    <input type="email" placeholder="Alamat email">
+                    <input type="text"placeholder="Perusahaan" autocomplete="off">
+                    <input type="PHONE"placeholder="Telepone" autocomplete="off">
+                    <TEXtarea rows="10" placeholder="Pesan"></TEXtarea>
+                    <button>Kirim</button>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px"
+            }
+        else
+            {
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+</body>
+</html>
+<style>
+
+.menu{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+    margin-left: 1240px;
+    bottom: 560px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.cart{
+    cursor: pointer; 
+    margin-left: 20px;
+    margin-left: 1530px;
+    bottom: 77vh;
+    position: absolute;
+    cursor: pointer;
+}
+
+    nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: #e3e6f3;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+
+    }
+
+    ul{
+        display: inline-block;
+        transition-duration: .5s;
+    }
+
+    li{
+        bottom: 30px;
+        position: relative;
+        display: inline-block;
+        margin: 10px;
+        padding: 7px;
+        transition-duration: .5s;
+        font-style: unset;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    .active{
+        color: green;
+    }
+
+    u{
+        color: green;
+    }
+
+
+    li:hover{
+        background: violet;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    }
+
+    a{
+        color: black;
+        text-decoration: none;
+        transition-duration: .5s;
+    }
+
+    a:hover{
+        color: white;
+        text-decoration: underline;
+    }
+
+
+    *{
+        box-sizing: border-box;
+        margin: 0;
+    }
+   
+    body{
+        background: #007a8d;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: "Montserrat", sans-serif;
+        font-size: 10px;
+        height: 100vh;
+        margin: -0px 0 50px;
+        padding: 10px;
+
+    }
+
+    h4{
+        font-size: 15px;
+    }
+
+    .container2{
+        width: 110%;
+    }
+
+    .container{
+        top: 50px;
+        background-color: #ffffff;
+        border-radius: 5px;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        position: relative;
+        overflow: hidden;
+        width: 768px;
+        max-width: 100%;
+        min-height: 538px;
+        min-width: 370px;
+    }
+
+    .card-container{
+        display: flex;
+    }
+
+    .left{
+        flex: 1;
+        height: 480px;
+        background-color: #00b4cf;
+    }
+    .right{
+        display: flex;
+        flex: 1;
+        height: 460px;
+        background-color: #ffffff;
+        justify-content: center;
+        align-items: center;
+    }
+    .left{
+        display: flex;
+        flex: 1;
+        height: 550px;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+    }
+    .left-container{
+        height: 70%;
+        width: 80%;
+        text-align: center;
+        line-height: 22px;
+    }
+    
+    .title{
+    text-align: center;
+    margin: 0 auto 30px;
+    position: relative;
+    line-height: 60px;
+    }
+
+    .title::after{
+    content: '';
+    background: orange;
+    width: 80px;
+    height: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    }
+
+
+    .left p{
+        font-size: 0.9rem;
+    }
+    h2{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        margin-left: 10px;
+    }
+    .right-container{
+        width: 70%;
+        height: 80%;
+        text-align: center;
+    }
+
+    input,
+textarea{
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+    font-size: 0.8rem;
+
+}
+input:focus,
+textarea:focus{
+    outline: 1px solid #00b4cf;
+}
+button{
+    border-radius: 20px;
+    border: 1px solid #00b4cf;
+    background-color: #00b4cf;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-out;
+    cursor: pointer;
+    margin-left: 3px;
+}
+button:hover{
+    opacity: 0.7;
+}
+textarea{
+    height: 90px;
+}
+/* responsive */
+
+@media only screen and ( max-width: 600px){
+
+    .container{
+        top: 220px;
+    }
+
+    .left{
+        display: none;
+    }
+    
+    .Ig-view{
+        display: none;
+    }
+
+    .sm-view{
+        display: none;
+    }
+
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li{
+        bottom: 10px;
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: white;
+    }
+
+    .cart{
+        width: 40px;
+        height: 40px;
+        margin-right: 40px;
+        display: none;
+        margin-left: 300px;
+        bottom: 545px;
+        position: absolute;
+        display: block;
+    }
+
+    .menu{
+        width: 40px;
+        margin-right: 30px;
+        display: none;
+        margin-left: 400px;
+        bottom: 545px;
+        position: absolute;
+        display: block;
+    }
+
+    .container{
+        top: 165px;
+    }
+} 
+@media only screen and (min-width: 600px) {
+    .sm-view{
+        display: none;
+    }
+}
+</style>
+</body>
+</html>
